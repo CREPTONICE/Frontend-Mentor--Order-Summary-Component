@@ -164,14 +164,9 @@ main {
   }
 }
 
-.centered {
-  display: grid;
-  place-items: center;
-}
-
 #loading {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -182,9 +177,8 @@ main {
   font-weight: bold;
   color: white;
   display: none;
-  filter: blur(1);
-  margin-left: 3px;
-  margin-top: 7.5rem;
+  top: 11.5rem;
+  left: 2rem;
 
   img {
     width: 50px;
