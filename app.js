@@ -14,8 +14,11 @@ function procced() {
     confirming.style.display = "none";
   }, 5000);
 
+  setTimeout(() => {
+    title.innerText = "Succesfully Subscribed";
+  }, 5001);
+
   confirming.style.display = "flex";
-  title.innerText = "Succesfully Subscribed";
   description.style.display = "none";
   plan.style.display = "none";
   proccedbtn.style.display = "none";
