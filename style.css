@@ -67,6 +67,7 @@ main {
   border-radius: 20px;
   width: fit-content;
   margin: 2rem 0 2rem;
+  transition: 0.3s;
 
   img {
     border-top-left-radius: 10px;
@@ -163,6 +164,11 @@ main {
   }
 }
 
+.centered {
+  display: grid;
+  place-items: center;
+}
+
 #loading {
   position: absolute;
   z-index: 1;
@@ -178,9 +184,27 @@ main {
   display: none;
   filter: blur(1);
   margin-left: 3px;
-  margin-top: 20px;
+  margin-top: 7.5rem;
 
   img {
     width: 50px;
+  }
+}
+
+@media (min-width: 400px) {
+  .box {
+    scale: 1.1;
+  }
+}
+
+@media (min-width: 768px) {
+  .box {
+    scale: 1.7;
+  }
+}
+
+@media (min-width: 1440px) {
+  .box {
+    scale: 2;
   }
 }
