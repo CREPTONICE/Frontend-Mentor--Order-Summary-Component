@@ -152,7 +152,7 @@ main {
 
 #goHome {
   display: block;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   text-decoration: none;
   color: var(--Desaturated--blue);
   width: fit-content;
@@ -167,9 +167,10 @@ main {
 #loading {
   position: absolute;
   z-index: 1;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
+  text-align: center;
   gap: 10px;
   background: var(--Bright--blue);
   border-radius: 20px;
@@ -177,8 +178,8 @@ main {
   font-weight: bold;
   color: white;
   display: none;
-  margin-top: 0.9rem;
-  margin-left: 2rem;
+  margin-inline: 2rem;
+  margin-block-start: 1rem;
 
   img {
     width: 50px;
