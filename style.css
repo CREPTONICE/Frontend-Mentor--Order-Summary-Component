@@ -203,3 +203,15 @@ main {
     scale: 2;
   }
 }
+
+@media (max-height: 600px) or (max-height: 800px) {
+  .box {
+    scale: 1.15;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 400px) {
+  .box {
+    scale: 1;
+  }
+}
