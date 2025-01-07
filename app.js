@@ -10,14 +10,16 @@ let changePrice = document.getElementById("changePrice");
 let confirming = document.getElementById("loading");
 
 function procced() {
+  title.style.opacity = 0;
+  goHome.style.opacity = 0;
+
   setTimeout(() => {
     confirming.style.display = "none";
+    title.style.opacity = 1;
+    goHome.style.opacity = 1;
   }, 5000);
 
-  setTimeout(() => {
-    title.innerText = "Succesfully Subscribed";
-  }, 5001);
-
+  title.innerText = "Succesfully Subscribed";
   confirming.style.display = "flex";
   description.style.display = "none";
   plan.style.display = "none";
